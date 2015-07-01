@@ -8,8 +8,8 @@ TODO: Write short description here and embulk-formatter-nested-jsonl.gemspec fil
 
 ## Configuration
 
-- **property1**: description (string, required)
-- **property2**: description (integer, default: default-value)
+- **encoding**: output encoding (string, default: 'UTF-8')
+- **newline**: output newline character (string, default: 'LF')
 
 ## Example
 
@@ -18,8 +18,8 @@ out:
   type: any output input plugin type
   formatter:
     type: nested-jsonl
-    property1: example1
-    property2: example2
+    encoding: UTF-8
+    newline: CRLF
 ```
 
 
